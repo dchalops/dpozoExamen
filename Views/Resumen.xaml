@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dpozoExamen.Views.Resumen"
+             Title="">
+    <VerticalStackLayout>
+        <Label x:Name="txtUsuarioConectado"
+           HorizontalOptions="End"
+           VerticalOptions="Start" />
+        
+        <Label Text="RESUMEN"
+                   HorizontalOptions="Center"
+                   FontSize="20"
+                   TextColor="Black" />
+
+        <Label x:Name="ResumenLabel" />
+
+        <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto"
+                  ColumnDefinitions="*,*">
+            
+            <Label Text="Nombre" Grid.Row="0" Grid.Column="0" />
+            <Label x:Name="NombreLabel" Grid.Row="0" Grid.Column="1" />
+
+            <Label Text="Apellido" Grid.Row="1" Grid.Column="0" />
+            <Label x:Name="ApellidoLabel" Grid.Row="1" Grid.Column="1" />
+
+            <Label Text="Edad" Grid.Row="2" Grid.Column="0" />
+            <Label x:Name="EdadLabel" Grid.Row="2" Grid.Column="1" />
+
+            <Label Text="Fecha" Grid.Row="3" Grid.Column="0" />
+            <Label x:Name="FechaLabel" Grid.Row="3" Grid.Column="1" />
+
+            <Label Text="Ciudad" Grid.Row="4" Grid.Column="0" />
+            <Label x:Name="CiudadLabel" Grid.Row="4" Grid.Column="1" />
+
+            <Label Text="País" Grid.Row="5" Grid.Column="0" />
+            <Label x:Name="PaisLabel" Grid.Row="5" Grid.Column="1" />
+
+            <Label Text="Monto Inicial" Grid.Row="6" Grid.Column="0" />
+            <Label x:Name="MontoInicialLabel" Grid.Row="6" Grid.Column="1" />
+
+            <Label Text="Pago Mensual" Grid.Row="7" Grid.Column="0" />
+            <Label x:Name="PagoMensualLabel" Grid.Row="7" Grid.Column="1" />
+            
+            <Label Text="Pago Total" Grid.Row="8" Grid.Column="0" />
+            <Label x:Name="PagoTotalLabel" Grid.Row="8" Grid.Column="1" />
+        </Grid>
+        
+    </VerticalStackLayout>
+</ContentPage>

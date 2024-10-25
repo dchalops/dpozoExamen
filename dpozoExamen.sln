@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dpozoExamen", "dpozoExamen.csproj", "{816D6741-8E38-413B-A557-DA6C37F692B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{816D6741-8E38-413B-A557-DA6C37F692B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{816D6741-8E38-413B-A557-DA6C37F692B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{816D6741-8E38-413B-A557-DA6C37F692B0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{816D6741-8E38-413B-A557-DA6C37F692B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{816D6741-8E38-413B-A557-DA6C37F692B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{816D6741-8E38-413B-A557-DA6C37F692B0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {403886A8-F1E5-4309-B8AD-3AA5862573D0}
+	EndGlobalSection
+EndGlobal

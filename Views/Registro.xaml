@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dpozoExamen.Views.Registro"
+             Title="">
+    <VerticalStackLayout>
+        <Label x:Name="txtUsuarioConectado"
+                   HorizontalOptions="End"
+                   VerticalOptions="Start" />
+
+        <Label Text="REGISTRO"
+                   HorizontalOptions="Center"
+                   FontSize="20"
+                   TextColor="Black"
+                   VerticalOptions="Center" />
+
+        <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto"
+                  ColumnDefinitions="*,*">
+            <Label Text="FECHA" Grid.Row="0" Grid.Column="0" />
+            <DatePicker x:Name="FechaPicker" Grid.Row="0" Grid.Column="1" />
+
+            <Label Text="PAIS" Grid.Row="1" Grid.Column="0" />
+            <Picker x:Name="PaisPicker" Grid.Row="1" Grid.Column="1">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Ecuador</x:String>
+                        <x:String>Colombia</x:String>
+                        <x:String>Perú</x:String>
+                        <x:String>Chile</x:String>
+                        <x:String>Argentina</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="CIUDAD" Grid.Row="2" Grid.Column="0" />
+            <Picker x:Name="CiudadPicker" Grid.Row="2" Grid.Column="1">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Quito</x:String>
+                        <x:String>Guayaquil</x:String>
+                        <x:String>Cali</x:String>
+                        <x:String>Lima</x:String>
+                        <x:String>Bogotá</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="Monto Inicial" Grid.Row="3" Grid.Column="0" />
+            <Entry x:Name="MontoInicialEntry" Grid.Row="3" Grid.Column="1"
+                       Placeholder="Ingrese el Monto Inicial" />
+
+            <Button Text="Calcular Pago mensual"
+                        Grid.Row="5" Grid.Column="0"
+                        Clicked="OnCalcularPagoClicked" />
+
+            <Entry x:Name="PagoMensualEntry" Grid.Row="5" Grid.Column="1" IsReadOnly="True" />
+        </Grid>
+
+        <BoxView HeightRequest="1" BackgroundColor="Black" />
+
+        <Grid RowDefinitions="Auto"
+                  ColumnDefinitions="*,*,*">
+            <Label Text="NOMBRE" Grid.Row="0" Grid.Column="0" />
+            <Label Text="APELLIDO" Grid.Row="0" Grid.Column="1" />
+            <Label Text="EDAD" Grid.Row="0" Grid.Column="2" />
+
+            <Entry Placeholder="Nombre" 
+                   Grid.Row="1" 
+                   Grid.Column="0" 
+                   x:Name="txtNombre"/>
+            
+            <Entry Placeholder="Apellido" 
+                   Grid.Row="1" 
+                   Grid.Column="1" 
+                   x:Name="txtApellido"/>
+            
+            <Entry Placeholder="Edad" 
+                   Grid.Row="1" 
+                   Grid.Column="2" 
+                   x:Name="txtEdad"/>
+        </Grid>
+
+        <Button Text="Ver resumen"
+                Clicked="Button_Clicked"
+                />
+        
+    </VerticalStackLayout>
+</ContentPage>
