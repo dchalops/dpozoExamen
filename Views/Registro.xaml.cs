@@ -82,6 +82,12 @@ public partial class Registro : ContentPage
             return;
         }
         
+        if (string.IsNullOrEmpty(MontoInicialEntry.Text))
+        {
+            DisplayAlert("Error", "Debe calcular el pago", "OK");
+            return;
+        }
+
         decimal pagoTotal = pagoMensual * 4 + montoInicial;
 
         Navigation.PushAsync(new Resumen(connectedUser, MontoInicialEntry.Text, PagoMensualEntry.Text, pagoTotal.ToString(), FechaPicker.Date.ToString("dd-MM-yyyy"), PaisPicker.SelectedItem.ToString(), CiudadPicker.SelectedItem.ToString(), txtNombre.Text, txtApellido.Text, txtEdad.Text));
